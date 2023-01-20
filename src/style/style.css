@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES  */
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Kodchasan:wght@300;400;700&family=Mouse+Memoirs&family=Noto+Sans+Display:wght@300;400;500&display=swap');
+
+:root{
+    --color-fondo: #0F2537;
+    --color-secondary: #4C9BE8;
+    --color-error: #B84743;
+    --color-blanco: #EBEBEB;
+
+    --fuente-uno: 'Noto Sans Display', sans-serif;
+    --fuente-dos: 'Kodchasan', sans-serif;
+    --fuente-tres: 'Kodchasan', sans-serif;
+    --fuente-cuatro: 'Germania One', cursive;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    font-family: var(--fuente-uno);
+}
+
+/* El navbar */
+.nav{
+    width: 100%;
+    height: 35;
+    padding: 10px 30px;
+    background-color: var(--color-secondary);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo__img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.app_andlogo{
+    max-width: 200px;
+}
+
+.app__logo{
+    font-family: var(--fuente-cuatro);
+    font-size: 20px;
+    color: var(--color-blanco);
+}
+
+/* Contenedor principal de elementos  */
+.contenedor__print{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Creando el formulario */
+.form{
+    width: 400px;
+    height: 220px;
+    background-color: var(--color-blanco);
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input__weather{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: var(--fuente-tres);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    border: none;
+    outline: none;
+}
+
+.button__weather{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--fuente-uno);
+    color: var(--color-blanco);
+    background-color: var(--color-fondo);
+    cursor: pointer;
+}
+
+/* Separados de los componentes  */
+.separador{
+    margin-top: 100px;
+}
+
+/* Haciendo la card del clima */
+.card{
+    width: 800px;
+    height: 350px;
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    display: flex;
+}
+
+.uno{
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.dos{
+    width: 550px;
+    height: 350px;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.info__data{
+    padding: 4px 20px;
+    font-size: 1.2rem;
+    font-family: var(--fuente-tres);
+    margin-top: 10px;
+}
+
+.more__info{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 2;
+}
+
+.data{
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.more__infoo{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    z-index: 2;
+}
+
+.icono__img{
+    width: 90px;
+}
+
+.descrp{
+    font-size: 18px;
+}
+
+.img_descrip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Mas detalles  */
+.more__details{
+    margin-top: 40px;
+    padding: 0 20px;
+    display: flex;
+}
+
+.details{
+    width: 190px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
